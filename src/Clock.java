@@ -15,6 +15,26 @@ public class Clock {
         updateDisplay();
     }
 
+    public Clock(boolean s){
+        if (s = true) {
+            hours = new NumberDisplay(13);
+            minutes = new NumberDisplay(60);
+            hours.setValue(0);
+            minutes.setValue(0);
+            updateDisplay();
+        }
+    }
+
+    public Clock(int h, int m, boolean s){
+        if (s = true) {
+            hours = new NumberDisplay(13);
+            minutes = new NumberDisplay(60);
+            hours.setValue(h);
+            minutes.setValue(m);
+            updateDisplay();
+        }
+    }
+
     public Clock(int hour, int minute){
         hours = new NumberDisplay(24);
         minutes = new NumberDisplay(60);
