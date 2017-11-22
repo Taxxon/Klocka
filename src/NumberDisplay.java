@@ -16,21 +16,21 @@ public class NumberDisplay {
     }
 
     public void setValue(int value) {
-        if (value >= 0 & value < 60) {
+        if (value >= 0 & value < limit) {
             this.value = value;
         }
     }
 
     public String getDisplayValue(){
         if (value < 10){
-            return ("Värde: 0" + value);
+            return ("0" + value);
         }else {
-            return ("Värde: " + value);
+            return ("" + value);
         }
     }
 
     public void increment(){
-        if (value == 59){
+        if ((value+1) == limit){
             value = 0;
         }else {
             value = value + 1;
