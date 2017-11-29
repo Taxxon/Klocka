@@ -7,8 +7,8 @@ public class NumberDisplay {
     private int value;
 
     public NumberDisplay(int maxLimit){
-        this.limit = maxLimit;
-        this.value = 0;
+            this.limit = maxLimit;
+            this.value = 0;
     }
 
     public int getValue() {
@@ -16,8 +16,10 @@ public class NumberDisplay {
     }
 
     public void setValue(int value) {
-        if (value >= 0 & value < limit) {
-            this.value = value;
+        if (value > 0){
+            if (value >= 0 & value < limit) {
+                this.value = value;
+            }
         }
     }
 
@@ -31,7 +33,7 @@ public class NumberDisplay {
 
     public void increment(){
         if ((value+1) == limit){
-            value = 0;
+            value = (limit - (value + 1));
         }else {
             value = value + 1;
         }

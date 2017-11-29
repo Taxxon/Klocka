@@ -42,5 +42,16 @@ public class Test {
         clock2.timeTick();
         System.out.println(clock2.getTime());
          **/
+
+        Clock clock = new Clock(true);
+        Clock clock1 = new Clock(12,59,true);
+        System.out.println(clock.getTime());
+        System.out.println(clock1.getTime());
+
+        clock1.timeTick();
+        System.out.println(clock1.getTime());
+
+        clock1.switchFormat();
+        System.out.println(clock1.getTime());
     }
 }
