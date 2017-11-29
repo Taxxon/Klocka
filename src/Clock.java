@@ -109,7 +109,7 @@ public class Clock {
             if (hours.getValue() <= 12) {
                 displayString = hours.getDisplayValue() + ":" + minutes.getDisplayValue() + "AM";
             }
-        } else if (s = false) {
+        } else {
             displayString = hours.getDisplayValue() + ":" + minutes.getDisplayValue();
         }
     }
